@@ -1,0 +1,13 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col text-center">
+      <a (click)="changeState('state2')" class="btn btn-danger">Change To State 2</a>
+    </div>
+    <div class="col text-center">
+      <a (click)="changeState('state1')" class="btn btn-info">Change To State 1</a>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <app-animate [currentState]="toState"></app-animate>
+  </div>
+</div>
